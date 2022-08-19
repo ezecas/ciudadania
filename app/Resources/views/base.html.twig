@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/all.css') }}" />
 
         {# <!-- Core theme CSS (includes Bootstrap)--> #}
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
         
         {# <!-- CSS Menu--> #}
-        <link href="{{ asset('css/menu.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/css/menu.css') }}" rel="stylesheet" />
             
     </head>
     <body>
@@ -26,35 +26,35 @@
         <div class="contenedor-menu">
             <a href="#" class="btn-menu">Menú<i class="icono fa fa-bars"></i></a>
                 <ul class="menu">
-                    <li><a href="#">Caminos</a>
+                    <li class="caminos"><a href="#">Caminos</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sapiente quos tempore ipsum, beatae optio nihil amet, 
                             inventore omnis illo commodi, delectus deleniti! 
                             Tempora neque dolor, inventore ullam suscipit ex esse.
                         </p>
                     </li>
-                    <li><a href="#">Agua</a>
+                    <li class="agua"><a href="#">Agua</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sapiente quos tempore ipsum, beatae optio nihil amet, 
                             inventore omnis illo commodi, delectus deleniti! 
                             Tempora neque dolor, inventore ullam suscipit ex esse.
                         </p>
                     </li>
-                    <li><a href="#">Gás</a>
+                    <li class="gas"><a href="#">Gás</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sapiente quos tempore ipsum, beatae optio nihil amet, 
                             inventore omnis illo commodi, delectus deleniti! 
                             Tempora neque dolor, inventore ullam suscipit ex esse.
                         </p>
                     </li>
-                    <li><a href="#">Energía</a>
+                    <li class="energia"><a href="#">Energía</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sapiente quos tempore ipsum, beatae optio nihil amet, 
                             inventore omnis illo commodi, delectus deleniti! 
                             Tempora neque dolor, inventore ullam suscipit ex esse.
                         </p>
                     </li>
-                    <li><a href="#">Conectividad</a>
+                    <li class="conectividad"><a href="#">Conectividad</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sapiente quos tempore ipsum, beatae optio nihil amet, 
                             inventore omnis illo commodi, delectus deleniti! 
@@ -62,6 +62,13 @@
                         </p>
                     </li>
                 </ul>
+                <div class="footer-menu">
+                    <div class="texto">En todas con vos.</div>
+                    <div class="img">
+                        <img alt="Santa Fe">
+                    </div>
+                </div>
+
         </div>
         
         {% block body %}{% endblock %}
@@ -70,8 +77,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{{ asset('js/scripts.js') }}"></script>
-        <script src="{{ asset('jquery/main.js') }}"></script>
+        <script src="{{ asset('assets/js/scripts.js') }}"></script>
+        <script src="{{ asset('assets/jquery/main.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

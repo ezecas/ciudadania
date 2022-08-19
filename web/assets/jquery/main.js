@@ -1,6 +1,11 @@
 $(document).ready(function(){
+    
+    /* setTimeout(function() {
+        $('.texto').fadeOut(1500);
+    },9000); */
+
     $('.menu li:has(p)').click(function(e){
-        e.preventDefault();
+        /* e.preventDefault(); */
 
         if ($(this).hasClass('activo')){
             $(this).removeClass('activo')
